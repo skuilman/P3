@@ -1,1 +1,200 @@
-hi
+body {
+	width: 350px;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	text-align: left;
+	margin-left: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
+#logo > img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+header {
+	padding-bottom: 40px;
+}
+
+#highlight {
+	background-color: #F6F6F6;
+	padding-bottom: 50px;
+	font-size: 16px;
+}
+
+#location {
+	border-top: 2px solid grey;
+	background-color: #EAEAEA;
+	padding-top: 10px;
+	width: 350px;
+	padding-bottom: 10px;
+}
+
+header p {
+	width: 250px;
+	margin: auto;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#location > span {
+	margin-left: 10px;
+}
+
+#button {
+	padding: 15px 0px 15px 0px;
+	width: 200px;
+	border-radius: 30px;
+	margin: auto;
+	background-image: linear-gradient(#FF79DA, #9356DC);
+	color: white;
+	box-shadow: 4px 4px 3px #E4E4E4;
+}
+
+.button-grey {
+	padding: 25px;
+	border-radius: 20px;
+	background-color: #F6F6F6;
+	margin: 10px 20px 20px 20px;
+	box-shadow: 4px 4px 3px #E4E4E4;
+	position: relative;
+	text-align: left;
+}
+
+.button-grey i {
+	margin-right: 20px;
+	margin-left: 15px;
+	color: grey;
+	font-size: 18px;
+	background: white;
+}
+
+.button-grey:hover {
+	background-color: #F5EDFF;
+	box-shadow: 4px 4px 3px #D6D6D6;
+}
+
+.button-grey:hover i {
+	color: #9356DC;
+}
+
+.container {
+	margin: 20px;
+}
+
+.number {
+	position: absolute;
+	left: -10px;
+	background: #9356DC;
+	color: white;
+	border-radius: 50%;
+	display: inline-block;
+	height: 22px;
+	width: 25px;
+	padding-top: 3px;
+	text-align: center;
+}
+	
+/* MAIN */
+
+main {
+	background-color: #F6F6F6;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+main img {
+	object-fit: cover;
+	object-position: 100% bottom;
+	width: 300px;
+	height: 155px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+main > div {
+	background-color: white;
+	width: 300px;
+	margin: auto;
+	border-radius: 15px;
+	box-shadow: 4px 4px 3px #E4E4E4;
+	position: relative;
+}
+
+main p, main h3 {
+	text-align: left;
+	margin-top: 5px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+main p {
+	padding-bottom: 15px;
+}
+
+.imgtop {
+	object-position: 100% 62%;
+}
+
+
+/* HEART */
+
+.fheart,
+.oheart {
+/* 	color: #9356DC;  */
+	color: black;
+	background: white;
+	position: absolute;
+	bottom: 25px;
+	right: 30px;
+	font-size: 22px;
+	transform: scale(1, 1.2);
+	-webkit-transform: scale(1, 1.2); /* Safari and Chrome */
+	-moz-transform: scale(1, 1.2); /* Firefox */
+	-ms-transform: scale(1, 1.2); /* IE 9+ */
+	-o-transform: scale(1, 1.2); /* Opera */
+}
+
+.fheart {
+	color: #9356DC;
+}
+
+.container:hover .oheart {
+	display: none;
+}
+
+.block {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: #99E2D0;
+	color: #1D6755;
+	padding: 5px 25px 5px 25px;
+	border-radius: 2px;
+	font-size: 11px;
+}
+
+
+/* FOOTER */
+
+footer {
+	background-color: #353535;
+	color: white;
+	text-align: left;
+	padding: 20px 0px 20px 30px;
+}
+
+footer img {
+	width: 120px;
+	-webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
