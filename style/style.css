@@ -153,11 +153,12 @@ main p {
 
 /* HEART */
 
+.heartbox {
+	margin: 20px;
+}
 
-.fheart,
 .oheart {
 	color: #9356DC;
-	background: white;
 	position: absolute;
 	bottom: 25px;
 	right: 30px;
@@ -165,18 +166,23 @@ main p {
 	transform: scale(1, 1.2);
 }
 
+.oheart:hover {
+	display: none;
+}
+
 .fheart {
+	position: absolute;
+	bottom: 25px;
+	right: 30px;
+	font-size: 22px;
 	color: #9356DC;
-	transition: opacity 2s;
+	transition: opacity 0.5s;
+	-webkit-transition: all 0.5s;
 	opacity: 0;
 }
 
-.container:hover {
+.fheart:hover {
 	opacity: 1;
-}
-
-.container:hover .oheart {
-/*	display: none; */
 }
 
 .block {
