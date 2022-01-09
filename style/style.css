@@ -59,6 +59,11 @@ header p {
 	box-shadow: 4px 4px 3px #E4E4E4;
 }
 
+#button:hover {
+	background-image: linear-gradient(#FF88DE, #9D68DE);
+	box-shadow: 4px 4px 3px #D6D6D6;
+}
+
 .button-grey {
 	padding: 25px;
 	border-radius: 20px;
@@ -148,24 +153,26 @@ main p {
 
 /* HEART */
 
+
 .fheart,
 .oheart {
-/* 	color: #9356DC;  */
-	color: black;
+	color: #9356DC;
 	background: white;
 	position: absolute;
 	bottom: 25px;
 	right: 30px;
 	font-size: 22px;
 	transform: scale(1, 1.2);
-	-webkit-transform: scale(1, 1.2); /* Safari and Chrome */
-	-moz-transform: scale(1, 1.2); /* Firefox */
-	-ms-transform: scale(1, 1.2); /* IE 9+ */
-	-o-transform: scale(1, 1.2); /* Opera */
 }
 
 .fheart {
 	color: #9356DC;
+	transition: opacity 2s;
+	opacity: 0;
+}
+
+.fheart:hover {
+	opacity: 1;
 }
 
 .container:hover .oheart {
@@ -182,7 +189,6 @@ main p {
 	border-radius: 2px;
 	font-size: 11px;
 }
-
 
 /* FOOTER */
 
