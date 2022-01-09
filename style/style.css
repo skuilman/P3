@@ -171,12 +171,12 @@ main p {
 	opacity: 0;
 }
 
-.fheart:hover {
+.container:hover {
 	opacity: 1;
 }
 
 .container:hover .oheart {
-	display: none;
+/*	display: none; */
 }
 
 .block {
