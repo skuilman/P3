@@ -1,10 +1,44 @@
 body {
-	width: 350px;
-	text-align: center;
-	margin: auto;
-	margin-top: 20px;
+	position: relative;
 	font-family: 'Roboto', sans-serif;
+	margin-left: 300px;
 }
+
+/* LOADER */
+
+.content {
+	width: 450px;
+	height: 100vh;
+	display: block;
+	margin-top: 600px;
+	z-index: 2;
+}
+
+.loader {
+	font-size: 150px;
+    animation: splash 3s normal forwards ease-in-out;
+	background-color: white;
+	position: absolute;
+	height: 100vh;
+	padding-top: 200px;
+	z-index: 1;
+}
+
+@keyframes splash {
+    from {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+    to {
+        transform: scale(1, 1);
+		visibility: hidden;
+    }
+}
+
 
 h2 {
 	text-align: left;
@@ -13,6 +47,7 @@ h2 {
 
 .center {
 	text-align: center;
+	width: 350px;
 }
 
 #logo > img {
@@ -22,6 +57,7 @@ h2 {
 
 header {
 	padding-bottom: 40px;
+	margin-top: -550px;
 }
 
 #highlight {
@@ -91,7 +127,7 @@ header p {
 	color: #9356DC;
 }
 
-.container {
+.heartbox {
 	margin: 20px;
 }
 
@@ -150,40 +186,41 @@ main p {
 	object-position: 100% 62%;
 }
 
+.container {
+	margin-top: 20px;
+}
+
 
 /* HEART */
 
-.heartbox {
-	margin: 20px;
-}
-
-.oheart {
-	color: #9356DC;
+.heart-full, .heart-open {
 	position: absolute;
 	bottom: 25px;
 	right: 30px;
-	font-size: 22px;
-	transform: scale(1, 1.2);
-}
-
-.oheart:hover {
-	display: none;
-}
-
-.fheart {
-	position: absolute;
-	bottom: 25px;
-	right: 30px;
-	font-size: 22px;
 	color: #9356DC;
-	transition: opacity 0.5s;
-	-webkit-transition: all 0.5s;
+	font-size: 30px;
+}
+
+.heart-open:hover {
+	display:none;
+}
+
+.heart-full {
 	opacity: 0;
 }
 
-.fheart:hover {
-	opacity: 1;
+.heart-full:hover {
+	display: block;
+	animation-name: fadein;
+	animation-duration: 2s;
 }
+
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 .block {
 	position: absolute;
@@ -198,15 +235,3 @@ main p {
 
 /* FOOTER */
 
-footer {
-	background-color: #353535;
-	color: white;
-	text-align: left;
-	padding: 20px 0px 20px 30px;
-}
-
-footer img {
-	width: 120px;
-	-webkit-filter: invert(100%); /* Safari/Chrome */
-    filter: invert(100%);
-}
