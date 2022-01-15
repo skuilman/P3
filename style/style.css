@@ -235,3 +235,15 @@ main p {
 
 /* FOOTER */
 
+footer {
+	background-color: #353535;
+	color: white;
+	text-align: left;
+	padding: 20px 0px 20px 30px;
+}
+
+footer img {
+	width: 120px;
+	-webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
