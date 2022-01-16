@@ -1,26 +1,36 @@
 body {
-	position: relative;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
 	font-family: 'Roboto', sans-serif;
-	margin-left: 300px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	max-width: 980px;
+}
+
+span {
+	font-family: 'Roboto', sans-serif;	
 }
 
 /* LOADER */
 
 .content {
-	width: 450px;
-	height: 100vh;
-	display: block;
-	margin-top: 600px;
+	margin-top: 580px;
 	z-index: 2;
 }
 
 .loader {
-	font-size: 150px;
-    animation: splash 3s normal forwards ease-in-out;
+    animation: splash 2s normal forwards ease-in-out;
 	background-color: white;
 	position: absolute;
 	height: 100vh;
-	padding-top: 200px;
+	width: 100%;
+	top: 0;
+	left: 0;
+    text-align: center;
+	padding-top: 35vh;
 	z-index: 1;
 }
 
@@ -28,10 +38,6 @@ body {
     from {
         opacity: 1;
         transform: scale(1, 1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.1, 1.1);
     }
     to {
         transform: scale(1, 1);
@@ -42,7 +48,6 @@ body {
 
 h2 {
 	text-align: left;
-	margin-left: 20px;
 }
 
 .center {
@@ -51,8 +56,9 @@ h2 {
 }
 
 #logo > img {
-	width: 200px;
+	width: 500px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 header {
@@ -63,36 +69,47 @@ header {
 #highlight {
 	background-color: #F6F6F6;
 	padding-bottom: 50px;
-	font-size: 16px;
+	font-size: 26px;
+}
+
+#highlight h2 {
+	text-align: center;
+	font-size: 55px;
 }
 
 #location {
 	border-top: 2px solid grey;
 	background-color: #EAEAEA;
-	padding-top: 10px;
-	width: 350px;
-	padding-bottom: 10px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	width: 100%;
+	font-size: 45px;
 }
 
 header p {
-	width: 250px;
-	margin: auto;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
 
 #location > span {
-	margin-left: 10px;
+	margin-left: 40px;
+}
+
+#description {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 40px;
 }
 
 #button {
 	padding: 15px 0px 15px 0px;
-	width: 200px;
+	width: 60%;
 	border-radius: 30px;
 	margin: auto;
 	background-image: linear-gradient(#FF79DA, #9356DC);
 	color: white;
 	box-shadow: 4px 4px 3px #E4E4E4;
+	font-size: 45px;
 }
 
 #button:hover {
@@ -100,21 +117,29 @@ header p {
 	box-shadow: 4px 4px 3px #D6D6D6;
 }
 
+#how {
+	margin-left: 4%;
+	margin-right: 4%;
+}
+
 .button-grey {
 	padding: 25px;
-	border-radius: 20px;
+	padding-top: 90px;
+	border-radius: 80px;
 	background-color: #F6F6F6;
 	margin: 10px 20px 20px 20px;
 	box-shadow: 4px 4px 3px #E4E4E4;
 	position: relative;
 	text-align: left;
+	font-size: 45px;
+	font-weight: bold;
+	height: 125px;
 }
 
 .button-grey i {
-	margin-right: 20px;
-	margin-left: 15px;
+	margin-right: 35px;
+	margin-left: 35px;
 	color: grey;
-	font-size: 18px;
 	background: white;
 }
 
@@ -138,10 +163,12 @@ header p {
 	color: white;
 	border-radius: 50%;
 	display: inline-block;
-	height: 22px;
-	width: 25px;
+	height: 34px;
+	width: 34px;
 	padding-top: 3px;
 	text-align: center;
+	font-size: 26px;
+	margin-top: 5px;
 }
 	
 /* MAIN */
