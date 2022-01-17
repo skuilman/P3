@@ -41,6 +41,37 @@ span {
     }
 }
 
+#loader-i {
+	font-size: 70px;
+	backface-visibility: hidden;
+
+}
+
+#loader-i i {
+	animation-name: color;
+	animation-duration: 3s;
+	color: #F1F1F1;
+	margin: 25px;
+	font-rendering-mode: sub-pixel; 
+}
+
+@keyframes color {
+	from {
+		color: #F1F1F1;
+	}
+	to {
+		color: #000;
+	}
+}
+
+#loader-i :nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+#loader-i :nth-child(3) {
+  animation-delay: 1s;
+}
+
 
 h2 {
 	text-align: left;
@@ -270,43 +301,4 @@ footer img {
     filter: invert(100%);
 }
 
-.image {
-	animation:spin 3s linear infinite;
-}
 
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
-
-.delay {
-	animation-name: color_change;
-	animation-duration: 3s;
-	color: #E6E6E6;
-	font-size: 70px; margin-top: 30px
-}
-
-@keyframes color_change {
-	from { color: #E6E6E6; }
-	to { color: black; }
-}
-
-.delay1 {
-  animation-delay: 0.3s;
-}
-
-.delay2 {
-  animation-delay: 1.0s;
-}
-
-.delay3 {
-  animation-delay: 1.7s;
-}
