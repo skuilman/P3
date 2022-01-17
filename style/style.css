@@ -1,13 +1,9 @@
 body {
-	text-align: center;
-	margin: auto;
 	margin-top: 20px;
 	font-family: 'Roboto', sans-serif;
-	margin-left: 0px;
-	margin-right: 0px;
 	margin-bottom: 0px;
-	padding: 0;
 	max-width: 980px;
+	margin: auto;
 }
 
 span {
@@ -22,9 +18,8 @@ span {
 }
 
 .loader {
-    animation: splash 2s normal forwards ease-in-out;
+    animation: splash 3s normal forwards ease-in-out;
 	background-color: white;
-	position: absolute;
 	height: 100vh;
 	width: 100%;
 	top: 0;
@@ -32,6 +27,7 @@ span {
     text-align: center;
 	padding-top: 35vh;
 	z-index: 1;
+	position: fixed;
 }
 
 @keyframes splash {
@@ -190,7 +186,6 @@ main img {
 
 main > div {
 	background-color: white;
-	width: 300px;
 	margin: auto;
 	border-radius: 15px;
 	box-shadow: 4px 4px 3px #E4E4E4;
@@ -273,4 +268,45 @@ footer img {
 	width: 120px;
 	-webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
+}
+
+.image {
+	animation:spin 3s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.delay {
+	animation-name: color_change;
+	animation-duration: 3s;
+	color: #E6E6E6;
+	font-size: 70px; margin-top: 30px
+}
+
+@keyframes color_change {
+	from { color: #E6E6E6; }
+	to { color: black; }
+}
+
+.delay1 {
+  animation-delay: 0.3s;
+}
+
+.delay2 {
+  animation-delay: 1.0s;
+}
+
+.delay3 {
+  animation-delay: 1.7s;
 }
