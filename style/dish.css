@@ -1,0 +1,114 @@
+body {
+	width: 750px;
+}
+
+
+#course1 {
+animation: dish 0.5s ease-in 0s forwards;
+opacity: 0;
+}
+
+#course2 {
+animation: dish 0.5s ease-in 0.5s forwards;
+opacity: 0;
+}
+
+#course3 {
+-webkit-animation: dish 0.5s ease-in 1s forwards;
+animation: dish 0.5s ease-in 1s forwards;
+opacity: 0;
+}
+
+@-webkit-keyframes dish {
+  0% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+
+@keyframes dish {
+  0% {
+	opacity: 0;
+  }
+  100% {
+	opacity: 1;
+  }
+}
+
+h2 span {
+	border-bottom: 2px solid #96E1CF;
+}
+
+.price p {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.slide i {
+	font-size: 20px;
+}
+
+.dish {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	margin: auto;
+	border-radius: 15px;
+	box-shadow: 4px 4px 3px #E4E4E4;
+	position: relative;
+	margin-top: 20px;
+}
+
+.dish
+{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
+}
+
+.dish .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dish .slide
+{
+	right: -60px;
+	height: 100%;
+	bottom: 0%;
+	text-align: center;
+	position: absolute;
+	transition: right 1s ease-in-out 0.1s;
+	width: 60px;
+}
+.dish:hover .slide
+{
+  right: 0%;
+  background-color: #99E2D0;
+}
+
+.dish .fas {
+	color: white;
+	margin-top: 20px;
+
+}
+
+.dish:hover .fas {
+	transition-duration: 1s;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transition: transform 1s ease-in-out;
+}
+
+.dish .price {
+	right: 0;
+	transition: right 1s ease-in-out;
+	position: relative;
+}
+
+.dish:hover .price {
+	right: 60px;
+}
