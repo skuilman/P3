@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
+	<title>ohmyfood</title>
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
-	<title>ohmyfood</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -29,14 +30,16 @@
 	<div id="highlight">
 		<div id="location" class="fas fa-map-marker-alt"><span>Paris, Belleville</span></div>
 		<h2>Book the menu you like</h2>
-		<div id="description">Discover top-of-the-art restaurants we picked for you</div>
+		<div id="description"><p>Discover top-of-the-art restaurants we picked for you</p></div>
 		<div id="button">Explore our restaurants</div>
 	</div>
 	<div id="how">
 	<h2>How it works</h2>
+	<div id="howwrap">
 		<div class="button-grey"><div class="number">1</div><i class="fa fa-mobile"></i><span>Chose a restaurant</span></div>
 		<div class="button-grey"><div class="number">2</div><i class="fas fa-list"></i><span>Create your menu</span></div>
 		<div class="button-grey"><div class="number">3</div><i class="fas fa-store"></i><span>Go enjoy it at the restaurant</span></div>
+	</div>
 	</div>
 </header>
 
@@ -44,7 +47,9 @@
 
 <h2>Restaurants</h2>
 
-<div style="text-align: center" onclick="location.href='the-full-palette.html';">
+<div id="mainwrap">
+
+<div class="choice" onclick="location.href='the-full-palette.html';">
 <img src="img/palette.jpg">
 <h3>Tyler's Full Palette</h3>
 <p>New York</p>
@@ -57,7 +62,7 @@
 	</div>
 </div>
 
-<div style="text-align: center" onclick="location.href='the-enchanted-plate.html';">
+<div class="choice" onclick="location.href='the-full-palette.html';">
 <img src="img/plate.jpg" class="imgtop">
 <h3>Tyler's Enchanted Plate</h3>
 <p>New York</p>
@@ -70,7 +75,7 @@
 	</div>
 </div>
 
-<div style="text-align: center" onclick="location.href='bastille.html';">
+<div class="choice" onclick="location.href='the-full-palette.html';">
 <img src="img/bastille.jpg">
 <h3>Bastille</h3>
 <p>New York</p>
@@ -80,7 +85,7 @@
 	</div>
 </div>
 
-<div style="text-align: center" onclick="location.href='le-gourmand.html';">
+<div class="choice" onclick="location.href='the-full-palette.html';">
 <img src="img/gourmand.jpg">
 <h3>Le Gourmand</h3>
 <p>New York</p>
@@ -88,6 +93,8 @@
 		<i class="far fa-heart heart-open"></i>
 		<i class="fas fa-heart heart-full"></i>
 	</div>
+</div>
+
 </div>
 
 </main>

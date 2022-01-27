@@ -4,17 +4,19 @@ body {
 
 
 #course1 {
-animation: dish 0.5s ease-in 0s forwards;
+-webkit-animation: dish 0.5s ease 0s forwards;
+        animation: dish 0.5s ease 0s forwards;
 opacity: 0;
 }
 
 #course2 {
-animation: dish 0.5s ease-in 0.5s forwards;
+-webkit-animation: dish 0.5s ease 1s forwards;
+        animation: dish 0.5s ease 1s forwards;
 opacity: 0;
 }
 
 #course3 {
--webkit-animation: dish 0.5s ease-in 1s forwards;
+-webkit-animation: dish 0.5s ease-in 2s forwards;
 animation: dish 0.5s ease-in 1s forwards;
 opacity: 0;
 }
